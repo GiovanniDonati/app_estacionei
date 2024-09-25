@@ -1,8 +1,8 @@
 import sqlite3
 
-conn = sqlite3.connect('backend/database/database.db')
-
+conn = sqlite3.connect('backend/database/estacionamento.db')
 cursor = conn.cursor()
+
 def create_table():
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS `veiculo` (
